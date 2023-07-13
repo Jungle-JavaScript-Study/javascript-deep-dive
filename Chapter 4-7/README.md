@@ -164,13 +164,18 @@ typeof foo;        // "undefined" (foo라는 변수가 선언되지 않았으므
 
 ```
 </details>
-Q10-1. 위의 3번을 올바르게 평가하는 두가지 방법에 대해 설명하시오
+
+<details>
+<summary>꼬리 질문</summary> 
+  Q10-1. 위의 3번을 올바르게 평가하는 두가지 방법에 대해 설명하시오
 <details>
 <summary>정답</summary> 
 
 - `Number.isNan(NaN)`, `isNan(NaN)`
 - `Object.is(NaN, NaN)`
 </details>
+</details>
+
 <br>
 
 Q11. 개발자 도구 콘솔창에 `var foo = 10`을 입력한 결과와 그 이유를 설명하시오
