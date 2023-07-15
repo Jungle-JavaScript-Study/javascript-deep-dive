@@ -144,6 +144,15 @@ console.log(person); // -> ??? // 2
         - delete 연산자는 객체의 프로퍼티를 삭제한다.
         존재하지 않는 프로퍼티를 삭제하면 **아무런 에러 없이 무시된다.**
 </details>
+<details>
+<summary>꼬리질문</summary>
+    Q7-1. JS의 어떤 특징덕에 존재하지 않는 프로퍼티를 삭제하려고 할 때 오류가 발생하지 않는걸까요?
+	<details>
+	<summary>정답</summary>
+    에러 허용성이 높은 JS언어의 특징 덕에 오류가 발생하지 않습니다.
+이런 특징은 코드의 유연성을 높이긴 하지만 디버깅이 어렵다는 단점이 있어 Type script와 같은 언어가 등장했습니다.
+</details>
+</details>
 
 Q8. 자바스크립트에서 변수에 원시 값과 객체를 할당할 때 각각 메모리에 저장되는 값은 무엇인가요?
 <details>
@@ -188,4 +197,20 @@ Q8-2. 여러 개의 식별자가 하나의 객체를 공유 할 때 생길 수 �
 </details>
 </details>
 </details>
+
+<details>
+<summary>번외</summary> 
+- Q9. 자바스크립트의 객체는 어떤 자료구조로 이뤄져있나요?
+<details>
+<summary>정답</summary>
+JavaScript의 객체는 key-value 쌍의 모음, 즉 해시 테이블(Hash table) 또는 딕셔너리(Dictionary)라고 정불리는 자료구조로 이루어져 있습니다.
+객체의 각 프로퍼티는 문자열 또는 심볼 타입의 키(Key)와 이에 대응하는 값(Value)로 구성되어 있습니다. 이러한 키-값 쌍을 통해 데이터를 저장하고 검색할 수 있습니다.
+		 
+                
+</details>
+</details>
+
+
+
+
 
