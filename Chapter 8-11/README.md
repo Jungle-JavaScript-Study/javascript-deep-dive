@@ -2,22 +2,20 @@ Q1. if … else 문과 삼항 조건 연산자의 차이점에 대해서 설명�
 
 <details>
 <summary>정답</summary>
-    - 둘 다 조건문을 만들어내지만, 
-    if … else 문은 **표현식이 아닌 문**이고,
-    삼항 조건 연산자는 **표현식**이다.
-    따라서, 삼항 조건 연산자 표현식은 값처럼 사용할 수 있기 때문에 **변수에 할당할 수 있다**.
+	
+둘 다 조건문을 만들어내지만,<br>if … else 문은 **표현식이 아닌 문** 이고,<br>삼항 조건 연산자는 **표현식** 이다.<br>따라서, 삼항 조건 연산자 표현식은 값처럼 사용할 수 있기 때문에 **변수에 할당할 수 있다**.<br>
     
-    ```jsx
-    var num = 2;
-    var kind = num ? (num > 0 ? '양수' : '음수' ) : '영';
-    
-    console.log(kind); // 양수
-    ```
+```javascript
+var num = 2;
+var kind = num ? (num > 0 ? '양수' : '음수' ) : '영';
+
+console.log(kind); // 양수
+```
 </details>
 
 Q2. 아래 예제에 대한 결과를 답하고, 이유를 설명하시오.
 
-```jsx
+```javascript
 var month = 11;
 var monthName;
 
@@ -39,19 +37,22 @@ default: monthName = 'Invalid month';
 
 console.log(monthName); // ??
 ```
+
 <details>
 <summary>정답</summary>
   
-    - 폴스루(fall through) 현상으로 인해, **‘Invalid month’** 가 출력된다.
-    break 문이 없기때문에 case 문으로 실행 흐름이 이동하여 monthName 에 ‘November’가 할당된 후 switch문을 탈출하지 않고
-    ‘December’가 할당되고 ‘Invalid month’가 재할당 된다.
+- 폴스루(fall through) 현상으로 인해, **‘Invalid month’** 가 출력된다.
+break 문이 없기때문에 case 문으로 실행 흐름이 이동하여 monthName 에 ‘November’가 할당된 후 switch문을 탈출하지 않고
+‘December’가 할당되고 ‘Invalid month’가 재할당 된다.
+
 </details>
 
 Q3. 레이블 문이 무엇인지 설명하시오.
 <details>
 <summary>정답</summary>
   
-    - 레이블 문은 **식별자가 붙은 문**이다.
+- 레이블 문은 **식별자가 붙은 문**이다.
+
 </details>
 <details>
 <summary>꼬리 질문</summary> 
@@ -60,40 +61,46 @@ Q3-1. 레이블 문은 어떤 경우에 쓰나요 ?
 <details>
 <summary>정답</summary>
 	
-        - 중첩된 for문 외부로 탈출할 때 유용하지만, 
-        레이블 문을 사용하면 코드가 복잡해지고 가독성이 나빠져서, 일반적으로는 권장하지 않는다.
+- 중첩된 for문 외부로 탈출할 때 유용하지만, 
+레이블 문을 사용하면 코드가 복잡해지고 가독성이 나빠져서, 일반적으로는 권장하지 않는다.
+
 </details>
 </details>
 
 Q4. 자바스크립트 엔진이 불리언이 아닌 값을 불리언 타입으로 암묵적으로 변환시킬 때, false 로 변환되는 값을 3가지 이상 말해보세요.
 <details>
 <summary>정답</summary>
-	
-    - `false`, `undefined`, `null`, `0`, `-0`, `NaN`, `‘’(빈 문자열)`
+
+`false`, `undefined`, `null`, `0`, `-0`, `NaN`, `‘’(빈 문자열)`
+    
 </details>
 
 Q5. 아래의 예제의 결과를 말하고, 이유를 설명하시오.
 
-```jsx
+```javascript
 'Cat' && 'Dog' // -> ??? // 1
 'Cat' || 'Dog' // -> ??? // 2
 ```
+
 <details>
 <summary>정답</summary>
 	
-    1. ‘Dog’ ,  논리곱 연산자(&&)는 논리 연산의 결과를 결정하는 두 번째 피연산자를 반환한다.
-    2. ‘Cat’ ,  논리합 연산자(||)는 논리 연산의 결과를 결정한 첫 번째 피연산자를 반환한다.
+1. ‘Dog’ ,  논리곱 연산자(&&)는 논리 연산의 결과를 결정하는 두 번째 피연산자를 반환한다.
+2. ‘Cat’ ,  논리합 연산자(||)는 논리 연산의 결과를 결정한 첫 번째 피연산자를 반환한다.
 </details>
 
 Q6. 객체란 무엇인가요 ?
 <details>
 <summary>정답</summary>
-	
-    - 0개 이상의 프로퍼티로 구성된 집합으로, 다양한 타입의 값(원시 값 또는 다른 객체)를 하나의 단위로 구성한 복합적인 자료구조이다.
+
+- 0개 이상의 프로퍼티로 구성된 집합으로, 다양한 타입의 값(원시 값 또는 다른 객체)를 하나의 단위로 구성한 복합적인 자료구조이다.
+  
 </details>
 <details>
 <summary>꼬리 질문</summary> 
-    &nbsp;&nbsp;Q6-1. 자바스크립트에서 객체를 생성하는 방법을 3가지 이상 말해주세요.
+
+&nbsp;&nbsp;Q6-1. 자바스크립트에서 객체를 생성하는 방법을 3가지 이상 말해주세요.
+
 <details>
 <summary>정답</summary>
         - 객체 리터럴
