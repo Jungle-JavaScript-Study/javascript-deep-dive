@@ -8,11 +8,8 @@
 데이터 프로퍼티는 키와 값으로 구성된 일반적인 프로퍼티로, 
 <br/>
 - 프로퍼티 값에 접근하면 반환되는 값인 `[[Value]]`
-<br/>
 - 값의 변경 가능 여부를 나타내는 `[[Writable]]`,
-<br/>
 - 열거 가능 여부를 나타내는 `[[Enumerable]]`,
-<br/>
 - 재정의 가능 여부를 나타내는 `[[Configurable]]`이 있습니다.
 
 </details>
@@ -40,11 +37,8 @@
 접근자 프로퍼티는 다른 데이터 프로퍼티의 값을 읽거나 저장할 때 사용하는 접근자 함수로 구성된 프로퍼티로, 
 <br/>
 - 접근자 프로퍼티를 통해 프로퍼티 값을 읽을 때 호출되는 접근자 함수인 `[[Get]]`
-<br/>
 - 접근자 프로퍼티를 통해 프로퍼티 값을 저장할 때 호출되는 접근자 함수인 `[[Set]]`
-<br/>
 - 열거 가능 여부를 나타내는 `[[Enumerable]]`,
-<br/>
 - 재정의 가능 여부를 나타내는 `[[Configurable]]`이 있습니다.
 
 </details>
@@ -58,9 +52,7 @@
 <summary>정답</summary>
 
 -  프로퍼티의 추가를 금지하는 `Object.preventExtensions`
-<br/>
 - 객체를 밀봉해 읽기와 쓰기만 가능하게 하는 `Object.seal`
-<br/>
 - 객체를 동결해 읽기만 가능하게 하는 `Object.freeze` 메서드가 있습니다.
 
 </details>
@@ -221,11 +213,8 @@ ES6의 메서드 축약 표현으로 작성된 메서드, 화살표 함수는 no
 <summary>정답</summary>
 
 - 무명의 리터럴로 생성 가능
-<br/>
 - 변수나 자료구조(객체, 배열 등)에 저장 가능
-<br/>
 - 함수의 매개변수에 전달 가능
-<br/>
 - 함수의 반환값으로 사용 가능
 
 
@@ -324,11 +313,8 @@ non-constructor 함수에는 prototype 프로퍼티가 없습니다.
 <summary>정답</summary>
 
 - 선언하지 않은 변수(암묵적 전역)을 참조하면 ReferenceError가 발생합니다.
-<br/>
 - delete 연산자로 변수, 함수, 매개변수를 삭제하면 SyntaxError가 발생합니다.
-<br/>
 - 중복된 매개변수 이름을 사용하면 SyntaxError가 발생합니다.
-<br/>
 - with문을 사용하면 SyntaxError가 발생합니다.
 
 </details>
@@ -341,7 +327,6 @@ non-constructor 함수에는 prototype 프로퍼티가 없습니다.
 <summary>정답</summary>
 
 - 함수를 일반 함수로서 호출했을 때 this에 바인딩 되는 값이 전역 객체가 아닌 undefined가 바인딩됩니다.
-<br/>
 - 매개변수로 전달 받은 인수를 재할당하여 변경해도 arguments 객체에는 반영되지 않습니다.
 
 </details>
@@ -379,11 +364,8 @@ https://nextjs.org/docs/app/api-reference/next-config-js/reactStrictMode
 <summary>정답</summary>
 
 - 컴포넌트가 추가로 한 번 더 렌더링되어 불순한 렌더링에 의해 발생하는 버그를 찾는 데 도움을 줍니다.
-<br/>
 - useEffect가 추가로 한 번 더 실행되어 Effect 정리가 누락되어 발생하는 버그를 찾는 데 도움을 줍니다.
-<br/>
 - deprecated 된 API를 사용하고 있지는 않은 지 확인합니다.
-<br/>
 https://react.dev/reference/react/StrictMode
 
 </details>
