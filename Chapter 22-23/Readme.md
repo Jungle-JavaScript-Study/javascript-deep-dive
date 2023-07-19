@@ -34,7 +34,7 @@
    <details>
     <summary>꼬리 질문</summary>
     
-    this에 바인딩되는 값을 함수 호출 방식에 따라 4가지로 분류하여 설명하시오.
+    `this`에 바인딩되는 값을 함수 호출 방식에 따라 4가지로 분류하여 설명하시오.
 
    <details>
    <summary>힌트</summary>
@@ -57,7 +57,7 @@
     <details>
     <summary>정답</summary>
 
-    strict mode가 적용되었을 때는 `undefined`, 아닐 때는전역 객체(브라우저에서는 `window`, Node.js에서는 `undefined`)
+    strict mode가 적용되었을 때는 `undefined`, 아닐 때는전역 객체(브라우저에서는 `window`, Node.js에서는 `global`)
 
     </details>
         
