@@ -199,7 +199,7 @@ Symbol.iterator를 프로퍼티 키로 사용한 메서드를 직접 구현하�
 
 <br/>
 
-### Q12. 이터레이터의 next 메서드는 어떤 역할을 하나요?
+### Q13. 이터레이터의 next 메서드는 어떤 역할을 하나요?
 
 <details>
 <summary>정답</summary>
