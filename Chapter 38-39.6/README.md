@@ -16,7 +16,7 @@
     </details>
 
 3. 다음 주소의 URI 구성 요소를 설명해보시오.
-   `https://mydomain.com:80/docs/search?category=javascript&lang=co#intro`
+   `https://mydomain.com:80/docs/search?category=javascript&lang=ko#intro`
     <details>
     <summary>정답</summary>
       
