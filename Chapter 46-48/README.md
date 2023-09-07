@@ -121,3 +121,71 @@ Promise는 콜백 지옥을 피하기 위해 비동기 코드를 조금 더 관�
 </details>
 
 ### 47장 에러처리
+---
+
+Q10. 에러 처리의 중요성에 대해 얘기해보세요. 왜 에러를 처리해야 할까요?
+
+<details><summary> 정답
+</summary>
+에러가 발생하지 않는 코드를 작성하는 것은 불가능 합니다. 따라서 에러는 언제나 발생할 수 있으며 발생한 에러에 대해 대처하지 않고 방치하면 최악의 경우 프로그램이 강제종료 되므로 사용자 경험이 나빠질 수 있습니다.
+이를 방지하고 개선하기 위해선 에러처리가 필요합니다.
+</details>
+
+Q11. 자바스크립트의 일반적인 에러처리 방식중 한가지만 설명해 보세요
+
+<details><summary> 정답
+</summary>
+try-catch-finally 블록이며
+try는 실행할 코드 catch는 try에서 에러가 발생하면 실행되는 코드블럭 finally는 에러 발생과 상관없이 반드시 실행되는 코드 블럭 입니다.</details>
+
+
+Q12. JavaScript에서 에러를 어떻게 발생시키고 처리할 수 있나요?
+<details><summary> 정답
+</summary>
+try 코드블록에서 throw문으로 에러 객체를 던져 에러를 발생시킬 수 있으며, try-catch 블록을 사용하여 에러를 처리합니다.</details>
+
+### 48장 모듈
+---
+
+Q13. 모듈이란 무엇인가요?
+<details><summary> 정답
+</summary>
+모듈이란 애플리케이션을 구성하는 개별적 요소로서 재사용 가능한 코드 조각을 말합니다.
+</details>
+
+Q14. CommonJS, AMD, ES6 등의 모듈 시스템에 대해 설명해보세요.
+
+<details><summary> 정답
+</summary> 
+
+CommonJS는 Node.js 환경에서 주로 사용됩니다.<br/>
+AMD(Asynchronous Module Definition)는 비동기 모듈 로딩을 지원하며, RequireJS와 함께 사용됩니다.<br/>
+ES6 모듈은 독자적인 모듈 스코프를 갖으며, import와 export 문을 사용하여 모듈을 정의하고 가져옵니다.<br/>
+</details>
+
+### 49장 Babel과 Webpack을 이용한 ES6 환경 구축
+---
+
+Q15. Babel과 Webpack은 각각 어떤 역할을 하는 도구인가요? 
+<details><summary> 정답
+</summary>
+
+**Babel**: Babel은 최신 JavaScript 코드(ES6+)를 이전 버전의 JavaScript 코드(예: ES5)로 변환하는 도구입니다. 이는 브라우저 호환성을 확보하고 새로운 기능을 사용할 수 있도록 도와줍니다. <br/>
+**Webpack**: Webpack은 모듈 번들러로, 여러 모듈과 종속성을 하나로 묶어 최적화된 번들을 생성합니다. 이는 코드 관리와 성능 최적화를 위해 필요합니다.
+</details>
+Q16. Babel의 "트랜스파일링(Transpiling)"이란 무엇인가요?
+
+<details><summary> 정답
+</summary>
+트랜스파일링은 하나의 프로그래밍 언어로 작성된 코드를 다른 언어로 변환하는 과정을 의미합니다. Babel을 사용하여 ES6 코드를 ES5로 변환하며, 예를 들어 화살표 함수, 클래스, 모듈 등의 ES6 기능이 ES5로 변환됩니다.
+
+</details>
+Q17. Webpack은 어떻게 모듈 번들링을 수행하며, 왜 모듈 번들러가 필요한가요?
+<details><summary> 정답
+</summary>
+웹팩을 사용하면 의존 모듈이 하나의 파일로 번들링 되므로 별도의 모듈 로더가 필요 없어지게 됩니다.
+여러개의 자바스크립트 파일을 하나로 번들링될 경우 HTML파일에서 script태그로 여러 개의 자바스크립트 파일을 로드해야하는 번거로움이 사라지게 되기 때문입니다.
+
+
+
+
